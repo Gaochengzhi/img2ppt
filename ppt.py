@@ -1,29 +1,3 @@
-# img2ppt
-convert images to presentation to prevent formatting errors when playing
-
-This Python script creates a PowerPoint presentation from a series of images in a specified folder. The script supports `.png`, `.jpg`, and `.jpeg` files and automatically sorts them based on the numbers in the filenames before adding them to the presentation.
-
-## Requirements
-
-- Python 3.6 or higher
-- python-pptx library
-
-## Installation
-
-1. Copy the script `image_to_powerpoint.py`.
-2. Install the `python-pptx` library if you haven't already:
-
-```bash
-pip3 install python-pptx 
-```
-
-## Usage
-
-first you may want to convert your keynode or powerpoint into a series of imgs in a folder, then go into that folder and execute this script
-
-or if you are lazy enough
-```bash
-echo '''
 import collections
 import collections.abc
 import os
@@ -78,9 +52,3 @@ for image_file in image_files:
 presentation.save(file_name)
 print(f"PowerPoint presentation created: {file_name}")
 
-''' > ppt.py
-python3 ppt.py
-```
-## License
-
-This project is licensed under the MIT License - see the LICENSE file for details.
